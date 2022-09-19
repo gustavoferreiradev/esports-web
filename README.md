@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Radix UI] (https://www.radix-ui.com/)
+- [Radix UI](https://www.radix-ui.com/)
 
 ## 💻 Projeto
 
