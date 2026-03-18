@@ -20,7 +20,7 @@ interface Game {
 }
 
 function App() {
-  const [games, setGames] = useState<Game[]>();
+  const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
     axios("http://localhost:3333/games").then((response) => {
