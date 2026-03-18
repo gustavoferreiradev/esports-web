@@ -10,6 +10,8 @@ import { CreateAdModal } from "./components/CreateAdModal";
 
 import axios from "axios";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 interface Game {
   id: string;
   title: string;
@@ -23,7 +25,7 @@ function App() {
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    axios("http://localhost:3333/games").then((response) => {
+    axios(`${API_URL}/games`).then((response) => {
       setGames(response.data);
     });
   }, []);
